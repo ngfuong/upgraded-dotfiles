@@ -8,12 +8,15 @@
 ## Change this #####
 
 # dotfiles directory
+# edit this with the path to the backup repository
 dir=~/upgraded-dotfiles
 
 # old dotfiles backup directory
+# edit this with the path to make a copy of your dotfiles before running the script
 olddir=~/upgraded-dotfiles/dotfiles_old
 
 # list of files/folders to symlink in homedir
+# edit this with the files you want to backup
 files="vimrc bashrc zshrc config/nvim/init.vim"
 
 ##########
