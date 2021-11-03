@@ -28,7 +28,7 @@ dir=~/upgraded-dotfiles
 
 # old dotfiles backup directory
 # edit this with the path to make a copy of your dotfiles before you run the script
-olddir=~/Users/eric-chi/Dropbox/__igor/repos/blogs/sample-dotfiles/dotfiles_old
+olddir=~/upgraded-dotfiles/dotfiles_old
 
 # list of files/folders to symlink in homedir
 # edit this with the files you want to backup
