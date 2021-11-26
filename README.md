@@ -47,6 +47,6 @@ Edit the dotfiles (e.g `.bashrc`) in your home directory normally and the files 
 If you want to record your changes, enter the local repository and stage the changes.
 ```
 git add bashrc
-git commit -m "Updated dot bash"
+git commit -m "Updated dot bashrc"
 ```
 
