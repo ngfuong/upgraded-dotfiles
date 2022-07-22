@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -89,7 +96,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+# auto start tmux after opening terminal
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach -t default || tmux new -s default
+fi
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -118,6 +128,9 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias vim="nvim"
 alias oldvim="\vim"
+# Set python as python3
+alias python3='python3.10'
+alias python='python3.8'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -146,3 +159,4 @@ VI_MODE_SET_CURSOR=true
 # export PROJECT_HOME=$HOME/programming
 # source /usr/.local/bin/virtualenvwrapper.sh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,7 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
   " Plugin Section
   " Themes
-  Plug 'morhetz/gruvbox'
+  "Plug 'morhetz/gruvbox'
+  Plug 'arcticicestudio/nord-vim'
   " Fuzzy search
   Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
   Plug 'junegunn/fzf.vim'
@@ -30,7 +31,7 @@ if (has("termguicolors"))
   set termguicolors
 endif
 set background=dark
-colorscheme gruvbox
+colorscheme nord 
 
 " Mapping configs
 let mapleader=";"

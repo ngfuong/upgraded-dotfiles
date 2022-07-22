@@ -17,7 +17,7 @@ olddir=~/upgraded-dotfiles/dotfiles_old
 
 # list of files/folders to symlink in homedir
 # edit this with the files you want to backup
-files="vimrc bashrc zshrc config/nvim/init.vim"
+files="bashrc zshrc tmux.conf config/nvim/init.vim config/i3/config"
 
 ##########
 
